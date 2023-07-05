@@ -1,4 +1,4 @@
-# Version 2 completed, accepted by LeetCode. Faster but a memory hog, beats 69.1% for speed but only 21% on memory. I can do better.
+# Version 2.1 completed, accepted by LeetCode. Turns out I left a print statement in that slowed it down and used a lot more memory. Memory usage has been greatly improved.
 def findSame(s, length, sc, idx, dir):
     while (idx >= 0 and idx < length and s[idx] == sc):
         idx += dir
@@ -19,7 +19,6 @@ def findPalindrome(s, middle, length):
         rightIdx = findSame(s, length, sc, rightIdx, 1)
     else:
         rightIdx -= 1
-    print(s[middle])
     while (leftIdx >= 0 and rightIdx < length):
         if (s[leftIdx] != s[rightIdx]):
             break

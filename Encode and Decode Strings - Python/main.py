@@ -1,4 +1,5 @@
 # Version 1. This is a premium challenge so I never got to test my solution but I don't see why it wouldn't work.
+# (I'm not sure if the syntax is correct tbh since I didn't test it)
 # It didn't say we couldn't use .join and .split so I did which makes this very easy. If I couldn't I could just
 # loop through the letters looking for my characters then append to an array each time. Extremely easy.
 
